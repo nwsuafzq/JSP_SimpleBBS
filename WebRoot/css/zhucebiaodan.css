@@ -1,0 +1,23 @@
+@CHARSET "UTF-8";
+/* === HTML5 validation styles === */
+.myform select:required,
+.myform input:required,
+.myform textarea:required {
+    background: #fff url(../img/red_asterisk.png) no-repeat 99% center;
+}
+
+.myform select:required:valid,
+.myform input:required:valid,
+.myform textarea:required:valid {
+    background: #fff url(../img/valid.png) no-repeat 99% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+
+.myform select:focus:invalid,
+.myform input:focus:invalid,
+.myform textarea:focus:invalid {
+    background: #fff url(../img/invalid.png) no-repeat 99% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
